@@ -65,5 +65,10 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	{ datetime, "| %s |",           "%F %T" },
+	/* 网络（有线）带图标 */
+  { ipv4,          " %s ",            "enp2s0" },    // 图标 "" 表示网络
+  /* 系统资源带图标 */
+  { disk_perc,     " %s%% ",          "/" },        // 图标 "" 表示磁盘
+  /* 时间带图标 */
+  { datetime,      " %s ",            "%Y-%m-%d %H:%M" }, // 图标 "" 表示时间
 };

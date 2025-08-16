@@ -49,8 +49,7 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
-	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
+	{ "Yad",      NULL,       "dwm-shortcuts", 0,            1,           -1 },
 };
 
 /* layout(s) */
@@ -87,6 +86,7 @@ static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "120x34
 static const char *screenshotcmd[] = { "flameshot", "gui", NULL };
 
 static const char *setupwallpaper[] = { "wallpaper", "setup", NULL };
+
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -128,6 +128,7 @@ static const Key keys[] = {
   { MODKEY|ShiftMask,           XK_c,                    quit,             {0} },
   { MODKEY|ShiftMask,           XK_f,                    fullscreen,       {0} },
   { MODKEY|ShiftMask,           XK_s,                    showall,          {0} },
+
 
   TAGKEYS(                        XK_1,                      0)
   TAGKEYS(                        XK_2,                      1)
