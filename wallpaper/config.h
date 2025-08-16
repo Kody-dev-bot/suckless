@@ -7,10 +7,10 @@
 
 #include <string>
 
-#define VERSION "0.0.1"
+#define VERSION "0.0.2"
 
 // 定义壁纸路径
-constexpr auto path = "/home/kody/Pictures/wallpapers/*.png";
+constexpr auto path = "~/Pictures/wallpapers/*.png";
 
 // 定义命令，使用壁纸路径
 const std::string cmd = "feh --bg-fill --no-fehbg --randomize " + std::string(path);
